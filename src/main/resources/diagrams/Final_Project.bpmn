@@ -103,7 +103,7 @@
     <sequenceFlow id="flow6" sourceRef="servicetask6" targetRef="endevent1"></sequenceFlow>
     <endEvent id="endevent1" name="End"></endEvent>
     <exclusiveGateway id="exclusivegateway2" name="Parallel Gateway"></exclusiveGateway>
-    <serviceTask id="servicetask21" name="GetProductList"></serviceTask>
+    <serviceTask id="servicetask21" name="GetProductList" activiti:class="mie.ether_example.GetProductList"></serviceTask>
     <sequenceFlow id="flow49" sourceRef="parallelgateway1" targetRef="servicetask21"></sequenceFlow>
     <sequenceFlow id="flow50" sourceRef="servicetask21" targetRef="subprocess2"></sequenceFlow>
     <sequenceFlow id="flow51" sourceRef="servicetask2" targetRef="servicetask7"></sequenceFlow>
